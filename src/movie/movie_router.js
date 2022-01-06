@@ -7,8 +7,8 @@ const {remove_Movie} = require("./movie_controller");
 
 
 movieRouter.post("/movie", addMovie);
-movieRouter.post("/movie", find_Movie);
-movieRouter.post("/movie", update_Movie);
-movieRouter.post("/movie", remove_Movie);
+movieRouter.get("/movie", find_Movie);
+movieRouter.put("/movie", update_Movie);
+movieRouter.delete("/movie", remove_Movie);
 
 module.exports = movieRouter;
